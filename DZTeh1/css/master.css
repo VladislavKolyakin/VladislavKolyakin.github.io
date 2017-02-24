@@ -1,0 +1,49 @@
+@font-face {
+    font-family: MyriadProRegular;
+    src: url(../fonts\MyriadProRegular/MyriadProRegular.ttf);
+}
+body {
+    padding: 0;
+    margin: 0;
+    width: 1024px;
+    height: 1024px;
+    background-color: #F3F3F3;
+}
+.wrapper1 {
+    margin: auto;
+    text-align: center;
+}
+h1 {
+    margin-top: 45px;
+    margin-bottom: 0;
+    font: bold 36px Arial;
+}
+#ris {
+    margin-top: 20px;
+}
+.wrapper2 {
+    margin: auto;
+    width: 675px;
+    font: 14px MyriadProRegular;
+}
+.work p {
+    font: 14px Arial;
+}
+.bold {
+    font: bold 18px MyriadProRegular;
+}
+.work,
+.frontend,
+.contact {
+    border-bottom: 2px solid #C0C0C0;
+}
+ul {
+    padding-left: 20px;
+    list-style-position: inside;
+}
+li {
+    font: 14px MyriadProRegular;
+}
+.norm {
+    padding-left: 35px;
+}
