@@ -1,0 +1,136 @@
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+body {
+    width: 1366px;
+    height: 950px;
+    background: #F9F9F9;
+    font: 11pt OpenSans-Regular;
+}
+.wrapper {
+    position: relative;
+    height: 950px;
+    margin-right: 152px;
+    margin-left: 154px;
+    padding-right: 48px;
+    padding-left: 45px;
+    box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0);
+     background: #ffffff;
+}
+/*меню одинаковое для heder и footer*/
+.menu {
+    width: 600px;
+    float: left;
+    text-shadow: 2px 1px 1px;
+    line-height: 40px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    width: 600px;
+}
+li {
+    display: inline-block;
+    text-align: center;
+}
+.glav p {
+    width: 140px;
+}
+.tovar p {
+    width: 100px;
+}
+.contact, .onas p {
+    width: 140px;
+}
+.header {
+    position: relative;
+    height: 120px;
+    padding-top: 50px;
+}
+.menu_header {
+    position: absolute;
+    bottom: 0;
+    width: 966px;
+    height: 40px;
+    background: linear-gradient( #5e5e5e, #454444);
+}
+.menu_header a {
+    color: #ffffff;
+}
+.menu_header p:hover {
+    border-right: 1px solid #838383;
+    border-left: 1px solid #838383;
+    background: linear-gradient( #4a4a4a, #2f2f2f);
+}
+.container {
+    height: 580;
+    margin-top: 40px;
+    color: #2c2c2c;
+    font: 10pt OpenSans-Regular;
+}
+.left_menu {
+    width: 238px;
+    height: 237px;
+    float: left;
+    border: 1px solid #c8c8c8;
+}
+.left_batton {
+    height: 39px;
+    border-bottom: 1px solid #c8c8c8;
+    line-height: 39px;
+}
+.left_batton a {
+    padding-left: 24px;
+    color: #2c2c2c;
+}
+.left_batton:hover {
+    padding-left: 11px;
+    background: #f9f9f9;
+}
+.content {
+    width: 680px;
+    height: 580px;
+    margin-left: auto;
+    font: 10pt;
+}
+.drawing {
+    display: flex;
+    height: 400px;
+    margin-bottom: 40px;
+    border: 1px solid #c8c8c8;
+    vertical-align: middle;
+    justify-content: center;
+}
+.drawing img {
+    align-self: center;
+}
+.tlorem p {
+    padding-right: 10px;
+    padding-left: 25px;
+    font: 10pt OpenSans-Regular;
+}
+.footer {
+    position: absolute;
+    bottom: 80px;
+    width: 966px;
+    height: 40px;
+    color: #2c2c2c;
+    background: #e1e1e1;
+    outline: 1px solid #cccccc;
+    font: 10pt OpenSans-Regular;
+}
+.footer a {
+    color: #2c2c2c;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.copyr {
+    display: inline-block;
+    width: 230px;
+    float: right;
+    text-align: center;
+    line-height: 40px;
+}
