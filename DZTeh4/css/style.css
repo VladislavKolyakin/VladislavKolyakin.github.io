@@ -1,0 +1,266 @@
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/TahomaRegular.ttf);
+}
+.wrapper {
+    position: relative;
+    width: 1280px;
+    height: 1311px;
+    margin: auto;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+}
+.while_main {
+    position: static;
+    width: 1018px;
+    height: 991px;
+    margin-left: 141px;
+    background-image: url(../img/while_main.png);
+}
+.white {
+    position: relative;
+    width: 1000px;
+    height: 988px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+.clearfx:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.google {
+    height: 38px;
+}
+.photo {
+    position: absolute;
+    top: 175px;
+    left: -2px;
+    width: 1002px;
+    height: 236px;
+    border-top: 1px solid #128aa7;
+    border-bottom: 1px solid #128aa7;
+}
+.logo {
+    position: absolute;
+    top: 11px;
+    left: 27px;
+    width: 283px;
+    height: 49px;
+}
+.travel {
+    position: absolute;
+    top: 110px;
+    left: 100px;
+    color: #128aa7;
+    font: 12px "Tahoma";
+}
+.contact {
+    position: absolute;
+    top: 8px;
+    left: 840px;
+}
+.contact p {
+    display: inline-block;
+    color: #128aa7;
+    font: 12px/18px "Tahoma";
+}
+.contries_flags {
+    position: absolute;
+    top: 110px;
+    left: 646px;
+    float: left;
+}
+.contries_flags li {
+    display: inline-block;
+    width: 52px;
+}
+.contries_flags li.tibet {
+    width: 50px;
+}
+.contries {
+    position: absolute;
+    top: 150px;
+    left: 648px;
+    float: left;
+}
+.contries li {
+    display: inline-block;
+    width: 53px;
+}
+.contries li.tibet {
+    width: 52px;
+}
+.contries li.butan {
+    width: 40px;
+}
+.contries a {
+    color: #128aa7;
+    font: 10px "Tahoma";
+}
+.centr_panel {
+    position: absolute;
+    top: 414px;
+    left: -4px;
+    padding-left: 56px;
+    width: 948px;
+    height: 28px;
+    background: linear-gradient(to top, #303030, #373737);
+    box-shadow: 0px 5px 3px -2px rgba(48, 48, 48, 0.8);
+    border-bottom: 1px solid #000000;
+}
+li p {
+    display: inline-block;
+}
+.tr {
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 8px;
+}
+ul {
+    display: block;
+}
+.centr_panel a {
+    text-decoration: none;
+    color: #ffffff;
+    font: 14px "Tahoma";
+}
+ul.menu>li {
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+ul.menu>li>a {
+    display: block;
+    padding-top: 4px;
+    padding-left: 10px;
+    text-decoration: none;
+    height: 24px;
+}
+ul.subm {
+    display: none;
+    position: absolute;
+}
+ul.subm>li {
+    display: block;
+}
+ul.subm>li>a {
+    line-height: 24px;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+ul.menu>li:hover>ul.subm {
+    display: block;
+    padding-left: 12px;
+    padding-bottom: 6px;
+    background-color: #303030;
+    box-shadow: 0px 5px 5px 0px rgba(30, 30, 30, 0.75);
+    font: 14px/24px "Tahoma";
+    color: #ffffff;
+    border-top: 1px solid #000000;
+}
+li.glavn {
+    width: 118px;
+}
+li.vojage {
+    width: 150px;
+}
+.vojage ul {
+    width: 140px;
+}
+li.service {
+    width: 120px;
+}
+.service ul {
+    width: 100px;
+}
+li.partner {
+    width: 137px;
+}
+.partner ul {
+    width: 110px;
+}
+li.comment {
+    width: 187px;
+}
+li.about {
+    width: 98px;
+}
+li.cont {
+    width: 120px;
+}
+ul p {
+    margin-left: 0px;
+}
+.h_d {
+    text-align: center;
+    font: 18px/24px "Tahoma";
+    color: #424c43;
+}
+.info {
+    padding-left: 15px;
+    font: 14px/24px "Tahoma";
+    color: #424c43;
+}
+.left_block {
+    position: absolute;
+    top: 443px;
+    left: -3px;
+    width: 209px;
+    height: 536px;
+    padding-top: 9px;
+    border-left: 1px solid #c7cacf;
+    border-right: 1px solid #c7cacf;
+    background-color: #edeef0;
+}
+.centr_block {
+    position: absolute;
+    top: 443px;
+    left: 206px;
+    width: 583px;
+    height: 536px;
+    padding-top: 9px;
+}
+.right_block {
+    position: absolute;
+    top: 443px;
+    left: 789px;
+    width: 209px;
+    height: 536px;
+    padding-top: 9px;
+    border-left: 1px solid #c7cacf;
+    border-right: 1px solid #c7cacf;
+    background-color: #edeef0;
+}
+.hrl1, .hrl2, .hrr1, .hrr2 {
+    position: absolute;
+    border: none;
+    width: 209px;
+    background-color: #c7cacf;
+    height: 1px;
+}
+.hrl1 {
+    top: 589px;
+    left: -2px;
+}
+.hrl2 {
+    top: 845px;
+    left: -2px;
+}
+.hrr1 {
+    top: 730px;
+    left: 789px;
+}
+.hrr2 {
+    top: 905px;
+    left: 789px;
+}
+.copyr {
+    position: absolute;
+    top: 1036px;
+    left: 551px;
+    color: #ffffff;
+    font: 12px "Tahoma";
+}
