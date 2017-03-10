@@ -5,16 +5,19 @@
 .wrapper {
     position: relative;
     width: 1280px;
-    height: 1311px;
     margin: auto;
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
+ }
+.google {
+    position: absolute;
+    top: 0px;
+    height: 38px;
 }
 .while_main {
-    position: static;
+    position: absolute;
+    top: 38px;
+    left: 142px;
     width: 1018px;
     height: 991px;
-    margin-left: 141px;
     background-image: url(../img/while_main.png);
 }
 .white {
@@ -23,14 +26,6 @@
     height: 988px;
     margin: 0 auto;
     background-color: #ffffff;
-}
-.clearfx:after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.google {
-    height: 38px;
 }
 .photo {
     position: absolute;
@@ -53,7 +48,7 @@
     top: 110px;
     left: 100px;
     color: #128aa7;
-    font: 12px "Tahoma";
+    font: 12px "Tahoma", sans-serif;
 }
 .contact {
     position: absolute;
@@ -63,7 +58,7 @@
 .contact p {
     display: inline-block;
     color: #128aa7;
-    font: 12px/18px "Tahoma";
+    font: 12px/18px "Tahoma", sans-serif;
 }
 .contries_flags {
     position: absolute;
@@ -96,12 +91,12 @@
 }
 .contries a {
     color: #128aa7;
-    font: 10px "Tahoma";
+    font: 10px "Tahoma", sans-serif;
 }
 .centr_panel {
     position: absolute;
     top: 414px;
-    left: -4px;
+    left: -3px;
     padding-left: 56px;
     width: 948px;
     height: 28px;
@@ -124,7 +119,7 @@ ul {
 .centr_panel a {
     text-decoration: none;
     color: #ffffff;
-    font: 14px "Tahoma";
+    font: 14px "Tahoma", sans-serif;
 }
 ul.menu>li {
     float: left;
@@ -157,7 +152,7 @@ ul.menu>li:hover>ul.subm {
     padding-bottom: 6px;
     background-color: #303030;
     box-shadow: 0px 5px 5px 0px rgba(30, 30, 30, 0.75);
-    font: 14px/24px "Tahoma";
+    font: 14px/24px "Tahoma", sans-serif;
     color: #ffffff;
     border-top: 1px solid #000000;
 }
@@ -196,18 +191,18 @@ ul p {
 }
 .h_d {
     text-align: center;
-    font: 18px/24px "Tahoma";
+    font: 18px/24px "Tahoma", sans-serif;
     color: #424c43;
 }
 .info {
     padding-left: 15px;
-    font: 14px/24px "Tahoma";
+    font: 14px/24px "Tahoma", sans-serif;
     color: #424c43;
 }
 .left_block {
     position: absolute;
     top: 443px;
-    left: -3px;
+    left: -2px;
     width: 209px;
     height: 536px;
     padding-top: 9px;
@@ -226,7 +221,7 @@ ul p {
 .right_block {
     position: absolute;
     top: 443px;
-    left: 789px;
+    left: 790px;
     width: 209px;
     height: 536px;
     padding-top: 9px;
@@ -234,33 +229,10 @@ ul p {
     border-right: 1px solid #c7cacf;
     background-color: #edeef0;
 }
-.hrl1, .hrl2, .hrr1, .hrr2 {
-    position: absolute;
-    border: none;
-    width: 209px;
-    background-color: #c7cacf;
-    height: 1px;
-}
-.hrl1 {
-    top: 589px;
-    left: -2px;
-}
-.hrl2 {
-    top: 845px;
-    left: -2px;
-}
-.hrr1 {
-    top: 730px;
-    left: 789px;
-}
-.hrr2 {
-    top: 905px;
-    left: 789px;
-}
 .copyr {
     position: absolute;
     top: 1036px;
     left: 551px;
     color: #ffffff;
-    font: 12px "Tahoma";
+    font: 12px "Tahoma", sans-serif;
 }
