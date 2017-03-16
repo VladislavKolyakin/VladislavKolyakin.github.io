@@ -1,0 +1,85 @@
+﻿* {
+  margin  : 0;
+  padding : 0;
+}
+.wrapper {
+  position : relative;
+  width    : 600px;
+  margin   : 0 auto;
+}
+table {
+  width           : 510px;
+  height          : 562px;
+  margin          : 0 auto;
+  border-collapse : collapse;
+}
+td {
+  border : 10px solid #25271e;
+}
+.col1 {
+  width : 54px;
+}
+.col2 {
+  width : 60px;
+}
+.col3 {
+  width : 65px;
+}
+.col4 {
+  width : 123px;
+}
+.col5 {
+  width : 77px;
+}
+.col6 {
+  width : 77px;
+}
+.null td {
+  visibility : collapse;
+  border     : none;
+}
+.string_1 td {
+  height : 48px;
+}
+.string_2 td {
+  height : 127px;
+}
+.string_3 td {
+  height : 130px;
+}
+.string_4 td {
+  height : 60px;
+}
+.string_5 td {
+  height : 60px;
+}
+.string_6 td {
+  height : 26px;
+}
+.string_7 td {
+  height : 31px;
+}
+.white {
+  background-color : #fff;
+}
+.yellow {
+  background-color : #fff969;
+}
+.red {
+  background-color : #ff583b;
+}
+.black {
+  background-color : #222222;
+}
+.blue {
+  background-color : #0d447f;
+}
+.nonbord {
+  position : absolute;
+  top      : -3px;
+  left     : 37px;
+  width    : 502px;
+  height   : 544px;
+  border   : 12px solid #fff;
+}
+
