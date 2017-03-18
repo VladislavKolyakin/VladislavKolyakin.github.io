@@ -1,7 +1,7 @@
 ﻿@font-face {
   font-family : HelveticaNeue;
   font-style  : normal;
-  src         : url(HelveticaNeueCyr-Roman.otf),
+  src         : url(../fonts/HelveticaNeueCyr-Roman.otf),
                 font-weight:normal;
 }
 .wrapper1 {
@@ -248,4 +248,3 @@ label {
 input:focus::-webkit-input-placeholder {
   color : #fffbfb;
 }
-

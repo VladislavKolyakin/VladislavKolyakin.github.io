@@ -52,8 +52,8 @@
 }
 .contact {
     position: absolute;
-    top: 8px;
-    left: 840px;
+    top:10px;
+    left: 842px;
 }
 .contact p {
     display: inline-block;
@@ -63,7 +63,7 @@
 .contries_flags {
     position: absolute;
     top: 110px;
-    left: 646px;
+    left: 640px;
     float: left;
 }
 .contries_flags li {
@@ -75,8 +75,8 @@
 }
 .contries {
     position: absolute;
-    top: 150px;
-    left: 648px;
+    top: 152px;
+    left: 647px;
     float: left;
 }
 .contries li {
@@ -97,7 +97,7 @@
     position: absolute;
     top: 414px;
     left: -3px;
-    padding-left: 56px;
+    padding-left: 59px;
     width: 948px;
     height: 28px;
     background: linear-gradient(to top, #303030, #373737);
