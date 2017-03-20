@@ -4,17 +4,12 @@
   src         : url(../fonts/HelveticaNeueCyr-Roman.otf);
                 font-weight:normal;
 }
-.wrapper1 {
-  margin-left      : -326px;
-  width            : 1920px;
-  height      : 1064px;
-  background-image : url(../img/bg2.png);
+body{
+   overflow    : hidden;
 }
 .wrapper {
-  width       : 1215px;
-
-  margin      : auto;
-  overflow    : hidden;
+ width: 100%;
+ height: 100%;
   font-family : HelveticaNeue,
                 Arial,
                 sans-serif;
@@ -22,10 +17,10 @@
 }
 .head_menu {
   position         : relative;
-  width            : 1920px;
+  width            : 100%;
   height           : 36px;
   background-image : url(../img/menu1.png);
-}
+ }
 .head_menu li {
   float       : right;
   text-align  : center;
@@ -33,7 +28,7 @@
 }
 .ola {
   width        : 190px;
-  margin-right : 398px;
+  margin-right : 35%;
   color        : #ffffff;
 }
 .current_2 {
@@ -108,10 +103,13 @@
 }
 .flex_2 {
   display         : flex;
-  width           : 1920px;
-  height          : 1040px;
+   width           : 100%;
+
+   min-height: 100vh;
   align-items     : center;
   justify-content : center;
+  background-image : url(../img/bg2.png);
+  background-size: cover;
 }
 .group12 {
   width  : 560px;
