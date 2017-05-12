@@ -12,7 +12,7 @@ if (question) {
 var nameUser = prompt('Введите имя пользователя')
 console.log(nameUser)
 var result = 'Ошибка, нет такого пользователя!'
-for (var i = 0; i < array.length; i++) {
+for (var i = 0, max = array.length; i < max; i++) {
    console.log(i, array[i] )
    if (array[i] == nameUser) {
       result = nameUser + ', Вы успешно вошли.'
