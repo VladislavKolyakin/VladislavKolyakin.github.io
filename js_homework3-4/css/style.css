@@ -1,0 +1,60 @@
+.test {
+  width     : 34.3%;
+  margin    : -3% auto;
+  font-size : 1.27rem;
+}
+ol {
+  margin-top    : 6.7%;
+  margin-bottom : 8%;
+  margin-left   : 4.8%;
+}
+h2 {
+  width     : 15%;
+  margin    : 5.5% auto;
+  font-size : 1.28rem;
+}
+ol>li {
+  margin-top  : 2.4%;
+  line-height : 1.4rem;
+}
+input {
+  font-size : 1.19rem;
+}
+label {
+  font-size : 1.1rem;
+}
+ul {
+  padding-top : 2.1%;
+}
+.submit {
+  display : block;
+  width   : 50%;
+  height  : 3.5rem;   margin: auto;
+}
+label {
+   display: inline-block;
+   position: relative;
+   margin-left: 5px;
+   padding-left: 24px;
+   font-size: 1.1rem;
+   cursor: pointer;
+}
+input[type=radio] {
+  display : none;
+}
+label:before {
+  content      : "";
+  display      : inline-block;
+  position     : absolute;
+  bottom       : 0;
+  left         : 0;
+  width        : 15px;
+  height       : 15px;
+  margin-right : 10px;
+  border       : 1px solid #000;
+}
+input[type=radio]:checked +label:before {
+  content      : "\2713";
+  text-align: center;
+  line-height: 17px;
+}

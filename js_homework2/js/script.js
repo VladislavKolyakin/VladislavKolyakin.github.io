@@ -17,7 +17,7 @@ for (var i = 0, max = array.length; i < max; i++) {
    if (array[i] == nameUser) {
       result = nameUser + ', Вы успешно вошли.'
       break
-}
+   }
 }
 console.log(result)
 alert (result)
