@@ -31,7 +31,7 @@ var attributesForm = [
 },
 {
    name: 'method',
-value: 'get'
+value: 'post'
 }
 ];
 var attributesInput = [
