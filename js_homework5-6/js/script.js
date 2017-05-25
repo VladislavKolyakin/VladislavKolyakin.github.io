@@ -5,8 +5,7 @@
       if (start.value === 'START') {
          start.value = 'PAUSE';
          start.style.backgroundColor = '#3a8cdc'
-         var date = new Date();
-         timeStart = date.getTime();
+         timeStart = Date.now();
          intervalID = setInterval(initMs, 1);
       } else {
          start.value = 'START';
@@ -17,8 +16,7 @@
    }
 
    function initMs() {
-      var myTime = new Date();
-      var timeNow = myTime.getTime();
+      var timeNow = Date.now();
       var timeDiffMs = ((timeNow - timeStart));
       myTimerMs = +stopTimerMs + timeDiffMs;
       timerMs.value = myTimerMs;
@@ -41,9 +39,7 @@
       timers.value = '00:00:00';
       start.value = 'START';
    }
-   function dyspl(){
-
-   }
+   
    var intervalID;
    var stopTimerMs = 0;
    var myTimerMs;
