@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>js_homework9-10</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/csscheckbox.css">
+   <link rel="stylesheet" href="css/cusel.css">
+   <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+   <script type="text/javascript" src="js/cusel.js"></script>
+   <script type="text/javascript" src="js/jScrollPane.js"></script>
+   <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+   <script type="text/javascript" src="js/jcarousel.basic.js"></script>
+   <script src="js/script.js" charset="utf-8"></script>
+</head>
+
+<body>
+   <div id="root">
+      <header>
+         <div id="title" class="content">
+            <h1>ТЕПЕРЬ МОЖНО ПУТЕШЕСТВОВАТЬ БЕЗ ВИЗ</h1>
+         </div>
+      </header>
+      <nav>
+         <ul class="menu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Бронирование</a></li>
+            <li><a href="#">Гостиница</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li class="dropdown galery">
+               <a href="#">Галерея</a>
+               <ul class="sub-menu">
+                  <li class="dropdown">
+                     <a href="#">Франция</a>
+                     <ul class="sub-menu">
+                        <li><a href="#">Париж</a></li>
+                        <li><a href="#">Марсель</a></li>
+                        <li><a href="#">Замки Луары</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#">Италия</a>
+                     <ul class="sub-menu">
+                        <li><a href="#">Рим</a></li>
+                        <li><a href="#">Венеция</a></li>
+                        <li><a href="#">Неаполь</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+      <form class="form" action="index.html" method="get">
+         <div class="checkboxReserv">
+            <input type="submit" name="reserv" value="Выбрать">
+            <div class="forjQuere">
+               <div class="checkboxJs">
+                  <label for="Checkbox1">Билет</label>
+                  <span>
+                       <input type="checkbox" name="ch1" id="Checkbox1" value ="ch1">
+                       </span>
+               </div>
+               <div class="checkboxJs">
+                  <label for="Checkbox2">Страховка</label>
+                  <span>
+                        <input type="checkbox" checked="checked" name="ch2" id="Checkbox2" value ="ch2">
+              </span>
+               </div>
+               <div class="checkboxJs">
+                  <label for="Checkbox3">Гостиница</label>
+                  <span>
+                        <input type="checkbox"   checked="checked" disabled="disabled" name="ch3" id="Checkbox3" value ="ch3">
+                    </span>
+               </div>
+            </div>
+            <div class="forCss">
+               <div class="checkboxCss">
+                  <input type="checkbox" name="ch4" id="Checkbox4" value="ch4">
+                  <label for="Checkbox4">Мини-бар</label>
+               </div>
+               <div class="checkboxCss">
+                  <input type="checkbox" checked="checked" name="ch5" id="Checkbox5" value="ch5">
+                  <label for="Checkbox5">Телевизор</label>
+               </div>
+               <div class="checkboxCss">
+                  <input type="checkbox" checked="checked" disabled="disabled" name="ch6" id="Checkbox6" value="ch6">
+                  <label for="Checkbox6">Холодильник</label>
+               </div>
+            </div>
+         </div>
+         <div class="contentText">
+            <p class="firstParagraf">1</p>
+            <p class="secondParagraf">2</p>
+         </div>
+         <div class="lineForm">
+            <label>Вы можете связаться с нами через социальные сети:</label>
+            <select name="social">
+      <option value="0">Выберите соц сеть</option>
+      <option value="1" class="twitter">twitter</option>
+      <option value="2" class="vkontakte">вконтакте</option>
+      <option value="3" class="lj">Live journal</option>
+      <option value="4" class="li">Live internet</option>
+      </select>
+         </div>
+      </form>
+      <div class="jcarousel-wrapper">
+         <div class="jcarousel">
+            <ul>
+               <li><img class="photo1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ScJB0w-Et4NyGmoCt2GmsmdoTuDM-FhvlXaSXvmtxr1qj9PO0A" width="600" height="400" alt=""></li>
+               <li><img class="photo2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRbreOv3PyUzkpMfYIVGZUQHRcs3fOhCmUmIciOc4HzOdiIkt3" width="600" height="400" alt="111"></li>
+               <li><img class="photo3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSilRdv-IxWdXndqpj6kqBunSZdmNpv98ZCjIUBwlVgVAM55y1t5g" width="600" height="400" alt=""></li>
+               <li><img class="photo4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX8QmuEMq3i66-XvxyU3BoLaNakignwHWZpapHUO1aKcqNOhJU" width="600" height="400" alt=""></li>
+               <li><img class="photo5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmi8zfGRuXmRjhXLTHvOy6baah9933BlTOUcygLo3q3LxzKUCRRg" width="600" height="400" alt=""></li>
+            </ul>
+         </div>
+         <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+         <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+         <p class="jcarousel-pagination">
+         </p>
+      </div>
+   </div>
+</body>
+
+</html>

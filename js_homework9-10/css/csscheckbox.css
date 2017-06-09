@@ -1,0 +1,77 @@
+
+.checkboxJs span input[type="checkbox"]{
+            display: none;
+        }
+        .checkboxJs{
+           display: flex;
+
+           align-items: center;
+            /*clear: both;*/
+            height: 30px;
+            width: 190px;
+            margin-bottom: 5px;
+        }
+        .checkboxJs label {
+           margin-left: 15px;
+         width: 115px;
+        }
+
+         .checkboxJs span {
+            display: block;
+            cursor: pointer;
+            width: 20px;
+            height: 17px;
+            background: url("../img/checkbox.png") no-repeat 0 0;
+            margin-left:10px;
+                    }
+        .checkActive span{
+background-position: 0 -17px;
+        }
+        .checkDisabled span{
+      background: url("../img/checkbox-disabled.png") no-repeat 0 0px;
+}
+.checkDisabledActive span{
+background: url("../img/checkbox-disabled.png") no-repeat 0 -17px;
+}
+.checkboxCss{
+   height: 21px;
+   width: 190px;
+   margin-top: 14px;
+   margin-left: -3px;
+}
+.checkboxCss input[type=checkbox] {
+   display: none;
+    position: absolute;
+}
+.checkboxCss label {
+   display: inline-block;
+   position: relative;
+   margin-left: 15px;
+
+width: 115px;
+ cursor: pointer;
+}
+.checkboxCss label::after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url('../img/checkbox.png');
+    position: absolute;
+    top: 3px;
+    right:-30px;
+}
+.checkboxCss input[type=checkbox]:checked + label::after {
+background-position: 0 -17px;
+}
+
+ .checkboxCss  input[disabled="disabled"] + label::after {
+   background: url("../img/checkbox-disabled.png") no-repeat 0 0px;
+   }
+   .checkboxCss  input[checked="checked"] [disabled="disabled"] + label::after {
+     background: url("../img/checkbox-disabled.png") no-repeat 0 -17px;
+     }
+input[type=submit]{
+   margin-left: 63px;
+   font-size: 1rem;
+}
