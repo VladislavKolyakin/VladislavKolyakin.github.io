@@ -1,0 +1,39 @@
+.carousel-list {
+  display  : flex;
+  position : relative;
+  width    : 10000px;
+  padding  : 0px;
+}
+.carousel-hider {
+  width    : 950px;
+  float    : left;
+  overflow : hidden;
+}
+.carousel-list li div {
+  text-align : center;
+  font-size  : 1.1rem;
+}
+.carousel-element {
+  display      : block;
+  margin-right : 25px;
+}
+.carousel-arrow-left,
+.carousel-arrow-right {
+  display          : block;
+  float            : left;
+  margin-top       : 50px;
+  padding          : 5px;
+  border           : 1px solid grey;
+  background-color : #eee;
+}
+.carousel-arrow-left:hover,
+.carousel-arrow-right:hover {
+  background-color : grey;
+  cursor           : pointer;
+}
+.carousel-arrow-left {
+  margin-right : 25px;
+}
+.carousel-arrow-right {
+  margin-left : 25px;
+}
