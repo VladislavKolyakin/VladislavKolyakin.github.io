@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>js_homework13-14</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src='https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js'></script>
+</head>
+
+<body>
+   <div id="root">
+      <div id="container">
+      </div>
+      <script type="text/template" id="template">
+         <h1><%- data.title%></h1>
+         <form class="test" action="index.html" method="get">
+            <ol>
+               <% var numQuestion = 0;%>
+                  <% _.forEach(data.questions, function (title){%>
+                     <% numQuestion++;%>
+                        <li>
+                           <%= title.title%>
+                        </li>
+                        <% var numAnswer = 0;%>
+                           <ul>
+                              <% _.forEach(title.answers, function (answers){  %>
+                                 <% numAnswer++;%>
+                                    <li>
+                                       <div class="checkboxJs">
+                                          <span><input  type="checkbox" name="<%-'question' + numQuestion%>" value="<%-'answer' + numAnswer%>" id="<%-'q' + numQuestion + 'v' + numAnswer%>"></span>
+                                          <label for="<%-'q' + numQuestion + 'v' + numAnswer%>"><%- answers%></label>
+                                       </div>
+                                    </li>
+                                    <% });%>
+                           </ul>
+                           <% });%>
+            </ol>
+            <input class="submit" value="Проверить результат">
+         </form>
+      </script>
+      <script type="text/javascript" src='js/script.js'></script>
+   </div>
+   <div id="modal_form">
+      <span id="modal_close">X</span>
+      <p class="reportError">123</p>
+      <p>Они отмечены красным</p>
+
+   </div>
+</body>
+
+</html>
+<ul>
