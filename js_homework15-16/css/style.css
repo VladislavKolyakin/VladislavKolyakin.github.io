@@ -1,0 +1,22 @@
+.constrTest{
+   width: 34.3%;
+       margin: 2% auto;
+       font-size: 1rem;
+       line-height: 1.7rem;
+       text-align: center;
+}
+#constrQuestion{
+   margin-left: 10px;
+width: 18px;
+}
+.constrAnswers input{
+   margin-left: 10px;
+width: 18px;
+}
+.red{
+   color: red;
+   border: 1px solid red;
+   }
+   ul {
+   	list-style: none;
+   }

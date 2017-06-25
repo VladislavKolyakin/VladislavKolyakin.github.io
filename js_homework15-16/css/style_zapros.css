@@ -1,0 +1,57 @@
+.pixabay {
+   margin: 10px auto;
+   max-width: 90%;
+}
+.headerPexels {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #000;
+   line-height: 3rem;
+}
+
+h1 {
+   font-size: 2.5rem;
+   color: #fff;
+}
+
+.formpixabay {
+   display: flex;
+}
+
+#searchInput {
+   margin-left: 20px;
+   padding-left: 10px;
+   height: 2.1rem;
+   width: 240px;
+   font-size: 1rem;
+   border-radius: 5px 0 0 5px;
+   border: 1px solid #000;
+}
+
+#searchButton {
+   margin-left: -1px;
+   height: 2.35rem;
+   width: 26px;
+   border-radius: 0 5px 5px 0;
+   border: 1px solid #000;
+   background-color: #fff
+}
+
+.icon {
+   padding-top: 10px;
+}
+
+.container {
+   margin: 10px auto;
+   width: 600px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.container div {
+   text-align: center;
+   width: 200px;
+}
