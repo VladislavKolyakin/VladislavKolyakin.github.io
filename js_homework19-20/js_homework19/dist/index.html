@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>js_homework19</title>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script src='https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js'></script>
+       <!-- <script type="text/javascript" src="http://pcvector.net/templates/pcv/js/pcvector.js"></script> -->
+       <!-- <script type='text/javascript' src='../script/script_slider.js'></script> -->
+   </head>
+   <body>
+      <div id="root">
+
+<div class="header">
+<div class="header__logo">
+<div class="logo">
+   <p class="logo__name">Build Home</p>
+   <p class="logo__theme">INDUSTRIAL THEME</p>
+</div>
+<div class="sotsSeti">
+   <ul>
+      <li class="fc"><a href="#"><img src="img/facebook.png" alt="fc"></a></li>
+      <li class="twitter"><a href="#"><img src="img/twitter.png" alt="twitter"></a></li>
+      <li class="rss"><a href="#"></a><img src="img/rss.png" alt="rss"></li>
+      <li class="linkedin"><a href="#"><img src="img/linkedin.png" alt="linkedin"></a></li>
+      <li class="skype"><a href="#"><img src="img/skype.png" alt="skype"></a></li>
+   </ul>
+</div>
+</div>
+<div class="headermenu">
+   <ul>
+      <li class ="current"><a  href="#">HOME</a></li>
+      <li><a href="#">FEATURES</a></li>
+      <li><a href="#">SERVICES</a></li>
+      <li><a href="#">NEWS</a></li>
+      <li><a href="http://hotline.ua/">SHOP</a></li>
+   </ul>
+<div class="search" >
+      <input type="text" name="search" value="" placeholder="   Search...">
+      <button> <img class="icon" src="img/search.png"  width="15" height="15" alt=""icon""></button>
+   </div>
+</div>
+<div id="slider-wrap">
+	<div class="slider">
+      <ul>
+      <li ><img src="img/build.png"></li>
+		<li ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLKLrTG7aGoHZg6vgVHJaR_Wq-UhCH2jcd1nd9XA7Mj2C1AeCN"  width="1159" height="469" alt="build2"></li>
+		<li ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRte_AD3UfhMdkS-OpcZ_5yhjBgd1AA2qOWojnvhKDhmU1-f4f0kA"  width="1159" height="469" alt="build3"></li>
+      </ul>
+		</div>
+</div>
+</div>
+<div id="article">
+</div>
+<div class="ourServices">
+   <h2>Our Services</h2>
+   <ul class="ourServices__element">
+      <li>
+         <a href="#">
+            <div class="schedule"><img src="img/10.png" alt="Schedule"></div>
+            <p>Schedule Services</p>
+         </a>
+      </li>
+      <li>
+         <a href="#">
+            <div class="maintence"><img src="img/11.png" alt="Maintence"></div>
+            <p>Preventive Maintence</p>
+         </a>
+      </li>
+      <li>
+         <a href="#">
+            <div class="tire"><img src="img/12.png" alt="Tire"></div>
+            <p>Tire & Wheel Services</p>
+         </a>
+      </li>
+      <li>
+         <a href="#">
+            <div class="repair"><img src="img/13.png" alt="Repair"></div>
+            <p>Repair Services</p>
+         </a>
+      </li>
+   </ul>
+</div>
+<div class="news">
+      <div id="latesNews">
+      <p class="latesNews__header">Latest News</p>
+   </div>
+   <div id="banners">
+      <p class="banners__header">Banners Place</p>
+   </div>
+</div>
+<div class="logotypes">
+   <ul>
+      <li><img src="img/Layer27.png" alt="RBP"></li>
+      <li><img src="img/Layer26.png" alt="MOTO"></li>
+      <li><img src="img/Layer22.png" alt="2CRAVE"></li>
+      <li><img src="img/Layer23.png" alt="ATX"></li>
+      <li><img src="img/Layer24.png" alt="Cruiser"></li>
+      <li><img src="img/Layer25.png" alt="GEAR"></li>
+   </ul>
+</div>
+<script type="text/template" id="templateNameBlock">
+   <% _.forEach(nameBlocks.data, function (nameBlock,i){%>
+      <div class="article__nameBlock">
+         <p class="numberNameBlock">
+            <%- '0'+ (i+1)%>
+         </p>
+         <div class="<%- nameBlocks.data[i].nameBlock%>">
+            <img src="img/<%- nameBlocks.data[i].path%>" alt="<%- nameBlocks.data[i].nameImg%>">
+            <h2><%- nameBlocks.data[i].nameBlock%></h2>
+            <p id="nameBlock__Text">
+               <%- nameBlocks.data[i].textBlock%>
+            </p>
+            <p class="nameBlockRead">Read More &#8594;</p>
+            <p class="hidde">Hide &#8592;</p>
+         </div>
+      </div>
+      <% });%>
+</script>
+<script type="text/template" id="templateLatesNews">
+   <ul>
+      <% _.forEach(latesNews.data, function (title){%>
+         <li>
+            <div class="latesNews__img">
+               <p class="month">
+                  <%- title.month%>
+               </P>
+               <p class="day">
+                  <%- title.day%>
+               </P>
+               <img src="img/<%- title.image%>" alt="<%- title.image%>">
+            </div>
+            <div class="latesNews__info">
+               <h2><a href="#"><%- title.title%></a></h2>
+               <span>by </span>
+               <a href="#">
+                  <%- title.autor%>
+               </a><span class="latesNews__comment">Comments (</span>
+               <a href="#">
+                  <%- title.comments%>
+               </a><span>)</span>
+               <p class="latesNews__text">
+                  <%- title.text%>
+               </p>
+            </div>
+            <% });%>
+               <ul>
+</script>
+<script type="text/template" id="templateBanners">
+   <ul>
+      <% _.forEach(banners.data, function (panel){%>
+         <li>
+            <h3><span class="banners__activ">&#10010;</span><span class="banners__panel">ACCORDION PANEL <%- panel.panel%></span></h3>
+            <p class="panelText">
+               <%- panel.text%>
+            </p>
+            <% });%>
+   </ul>
+</script>
+<div id="footer__menu">
+</div>
+<div class="footer__info">
+   <ul>
+      <li class="location">
+         <img src="img/location.svg" alt="location">
+         <span>BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
+      </li>
+      <li>
+         <img src="img/IPhone.svg" alt="phone">
+         <span>+123 900 123 456</span>
+      </li>
+      <li>
+         <img src="img/email.svg" alt="email">
+         <span>info@buildhome.web</span>
+      </li>
+   </ul>
+   <p class="copy">&copy;2014 Build Home</p>
+</div>
+<script type="text/template" id="templateFooter">
+   <ul>
+      <% _.forEach(linkFooter.data, function (name){%>
+         <li class="menu__item">
+            <p>
+               <%- name.name %>
+            </P>
+            <ul class="submenu">
+               <% var hr=0;%>
+                  <% _.forEach(linkFooter.data, function (link,k){%>
+                     <li class="submenu__item">
+                        <div>
+                           <a href="#">
+                              <%-name.link[k]%>
+                           </a>
+                     </li>
+                     <% if (hr<3) {%>
+                        <hr>
+                        <% hr++;}%>
+         </li>
+         <% });%>
+            </ul>
+            </li>
+            <% });%>
+   </ul>
+</script>
+         </div>
+    <script type="text/javascript" src="js/scripts.js"></script>
+   </body>
+</html>

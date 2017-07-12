@@ -1,0 +1,45 @@
+<div id="footer__menu">
+</div>
+<div class="footer__info">
+   <ul>
+      <li class="location">
+         <img src="img/location.svg" alt="location">
+         <span>BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
+      </li>
+      <li>
+         <img src="img/IPhone.svg" alt="phone">
+         <span>+123 900 123 456</span>
+      </li>
+      <li>
+         <img src="img/email.svg" alt="email">
+         <span>info@buildhome.web</span>
+      </li>
+   </ul>
+   <p class="copy">&copy;2014 Build Home</p>
+</div>
+<script type="text/template" id="templateFooter">
+   <ul>
+      <% _.forEach(linkFooter.data, function (name){%>
+         <li class="menu__item">
+            <p>
+               <%- name.name %>
+            </P>
+            <ul class="submenu">
+               <% var hr=0;%>
+                  <% _.forEach(linkFooter.data, function (link,k){%>
+                     <li class="submenu__item">
+                        <div>
+                           <a href="#">
+                              <%-name.link[k]%>
+                           </a>
+                     </li>
+                     <% if (hr<3) {%>
+                        <hr>
+                        <% hr++;}%>
+         </li>
+         <% });%>
+            </ul>
+            </li>
+            <% });%>
+   </ul>
+</script>

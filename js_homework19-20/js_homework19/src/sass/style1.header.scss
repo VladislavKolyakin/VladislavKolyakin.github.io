@@ -1,0 +1,127 @@
+@import "susy";
+$susy: (
+       // columns: 12,
+        gutters: 1/4,
+        math: fluid,
+        output: float,
+        gutter-position: inside,
+        container: 60em,
+        debug: (
+                image: show,
+                color: rgba(#66f, .5),
+                output: background,
+                toggle: top right,
+        )
+);
+body{
+   width: 1920px;
+}
+#root{
+   position: relative;
+}
+.header{
+   margin: 0 auto;
+   width: 1160px;
+}
+.header__logo {
+   margin-top: 48px;
+   display: flex;
+   justify-content: space-between;
+         };
+   .logo {
+      margin-left: 47px;
+
+         }
+   .logo::before {
+         content: '';
+         display: block;
+         float: left;
+         background-image: url("../img/logo.png");
+         margin-left: -27%;
+         width: 35px;
+         height: 35px;
+         background-repeat: no-repeat;
+         };
+
+      .logo__name {
+         font: 30px/20px "Ubuntu Medium";
+         color: #434343;
+            }
+
+      .logo__theme {
+         font: 12px/20px "Ubuntu Light";
+         letter-spacing: 0.3em;
+         color: #333333;
+         };
+
+   .sotsSeti {
+      display: flex;
+      justify-content: flex-end;
+      width: susy-span(3 of 12);
+
+         ul{
+            display: flex;
+            justify-content: space-between;
+            width: susy-span(6 of 12);
+           }
+             li {
+             display: inline-block;
+             }
+          }
+.headermenu {
+   margin-top:40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 55px;
+   background-color: #2a2d32;
+   ul {
+   width: susy-span(8 of 12);
+      }
+
+      li {
+      display: inline-block;
+      width: susy-span(2 of 12);
+      padding-left: 0;
+      text-align: center;
+      height: 55px;
+      }
+         a {
+         display: block;
+         margin: auto;
+         text-decoration: none;
+         line-height: 55px;
+         font-size: 14px;
+         font-family: "Ubuntu Condensed";
+         color: #fff;
+         }
+.search {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   width: susy-span(3 of 12);
+   }
+      input[type='text'] {
+      height: 38px;
+      border: none;
+      background-color: #35383c;
+      font-size: 12px;
+      font-family: "Arial";
+      color: #fff;
+     };
+   button {
+      margin-right: 10px;
+      height: 41px;
+      border: none;
+      background-color: #35383c;
+   };
+.headermenu ul li {
+   border-right: 1px solid rgb(24, 26, 29);
+      }
+   a:hover {
+      color: #cc9919;
+   }
+.current {
+   background-color: #248cec;
+}
+}

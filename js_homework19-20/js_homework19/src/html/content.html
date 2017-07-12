@@ -1,0 +1,107 @@
+<div id="article">
+</div>
+<div class="ourServices">
+   <h2>Our Services</h2>
+   <ul class="ourServices__element">
+      <li>
+         <a href="#">
+            <div class="schedule"><img src="img/10.png" alt="Schedule"></div>
+            <p>Schedule Services</p>
+         </a>
+      </li>
+      <li>
+         <a href="#">
+            <div class="maintence"><img src="img/11.png" alt="Maintence"></div>
+            <p>Preventive Maintence</p>
+         </a>
+      </li>
+      <li>
+         <a href="#">
+            <div class="tire"><img src="img/12.png" alt="Tire"></div>
+            <p>Tire & Wheel Services</p>
+         </a>
+      </li>
+      <li>
+         <a href="#">
+            <div class="repair"><img src="img/13.png" alt="Repair"></div>
+            <p>Repair Services</p>
+         </a>
+      </li>
+   </ul>
+</div>
+<div class="news">
+      <div id="latesNews">
+      <p class="latesNews__header">Latest News</p>
+   </div>
+   <div id="banners">
+      <p class="banners__header">Banners Place</p>
+   </div>
+</div>
+<div class="logotypes">
+   <ul>
+      <li><img src="img/Layer27.png" alt="RBP"></li>
+      <li><img src="img/Layer26.png" alt="MOTO"></li>
+      <li><img src="img/Layer22.png" alt="2CRAVE"></li>
+      <li><img src="img/Layer23.png" alt="ATX"></li>
+      <li><img src="img/Layer24.png" alt="Cruiser"></li>
+      <li><img src="img/Layer25.png" alt="GEAR"></li>
+   </ul>
+</div>
+<script type="text/template" id="templateNameBlock">
+   <% _.forEach(nameBlocks.data, function (nameBlock,i){%>
+      <div class="article__nameBlock">
+         <p class="numberNameBlock">
+            <%- '0'+ (i+1)%>
+         </p>
+         <div class="<%- nameBlocks.data[i].nameBlock%>">
+            <img src="img/<%- nameBlocks.data[i].path%>" alt="<%- nameBlocks.data[i].nameImg%>">
+            <h2><%- nameBlocks.data[i].nameBlock%></h2>
+            <p id="nameBlock__Text">
+               <%- nameBlocks.data[i].textBlock%>
+            </p>
+            <p class="nameBlockRead">Read More &#8594;</p>
+            <p class="hidde">Hide &#8592;</p>
+         </div>
+      </div>
+      <% });%>
+</script>
+<script type="text/template" id="templateLatesNews">
+   <ul>
+      <% _.forEach(latesNews.data, function (title){%>
+         <li>
+            <div class="latesNews__img">
+               <p class="month">
+                  <%- title.month%>
+               </P>
+               <p class="day">
+                  <%- title.day%>
+               </P>
+               <img src="img/<%- title.image%>" alt="<%- title.image%>">
+            </div>
+            <div class="latesNews__info">
+               <h2><a href="#"><%- title.title%></a></h2>
+               <span>by </span>
+               <a href="#">
+                  <%- title.autor%>
+               </a><span class="latesNews__comment">Comments (</span>
+               <a href="#">
+                  <%- title.comments%>
+               </a><span>)</span>
+               <p class="latesNews__text">
+                  <%- title.text%>
+               </p>
+            </div>
+            <% });%>
+               <ul>
+</script>
+<script type="text/template" id="templateBanners">
+   <ul>
+      <% _.forEach(banners.data, function (panel){%>
+         <li>
+            <h3><span class="banners__activ">&#10010;</span><span class="banners__panel">ACCORDION PANEL <%- panel.panel%></span></h3>
+            <p class="panelText">
+               <%- panel.text%>
+            </p>
+            <% });%>
+   </ul>
+</script>

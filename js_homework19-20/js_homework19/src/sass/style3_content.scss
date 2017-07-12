@@ -1,0 +1,223 @@
+
+@import "susy";
+#article {
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+   width: 1160px;
+   --susy-columns: 12;
+}
+.article__nameBlock {
+   display: flex;
+   margin-top: 70px;
+   //width: 370px;
+   width: susy-span(4 of 12);
+}
+.numberNameBlock {
+   margin-top: 16px;
+   width: 162px;
+   height: 90px;
+   font: 90px/20px "Ubuntu Medium";
+   color: rgba(42, 43, 46, 0.102);
+}
+h2 {
+   margin-top: 10px;
+   font: 20px/20px "Ubuntu Medium";
+   color: rgba(42, 43, 46, 1);
+}
+#nameBlock__Text {
+   display: block;
+   margin-top: 20px;
+   height: 60px;
+   width: 245px;
+   font: 13px/20px Arial;
+   color: #8a8a8a;
+   overflow: hidden;
+   text-overflow: clip;
+}
+.nameBlockRead {
+   margin-top: 17px;
+   margin-bottom: 70px;
+   font: 13px/20px "Ubuntu Medium";
+   color: #2a2b2e;
+}
+.hidde {
+   display: none;
+   margin-top: 70px;
+   font: 13px/20px "Ubuntu Medium";
+   color: #2a2b2e;
+}
+.ourServices {
+   height: 500px;
+   width: 1920px;
+   background-color: rgb(42, 45, 50);
+   h2 {
+      padding-top: 47px;
+      margin-left: 380px;
+      font: 24px/20px "Ubuntu Medium";
+      color: #ffffff;
+   }
+}
+.ourServices__element {
+   display: flex;
+   justify-content: space-between;
+   margin: 50px auto;
+   width: susy-span(8 of 13);
+}
+.ourServices__element li {
+   width: susy-span(3 of 12);
+   a {
+         text-align: center;
+            div{
+               width: 260px;
+               margin-bottom:30px;
+               height: 260px;
+               background-image: url(../img/current_block.png);
+            }
+            p{
+               margin-left: -40px;
+               font: 16px/20px "Ubuntu Medium";
+            color: #ffffff;
+            }
+      }
+}
+.news{
+   height: 540;
+   width: 1920px;
+   display: flex;
+   background-color: #f7f7f7;
+   }
+  #latesNews{
+     margin-left: 20px;
+width: susy-span(6 of 12);
+      .latesNews__header {
+         margin-top: 60px;
+         font: 24px/20px  "Ubuntu Medium";
+         color: #2a2d32;
+         width: susy-span(6 of 12);
+         }
+        ul{
+         margin-top: 50px;
+        display: flex;
+        flex-direction:column;
+        align-items: flex-end;
+        }
+           li{
+               display: flex;
+               width: susy-span(8 of 12);
+               margin-bottom: 30px;
+               }
+              .latesNews__img{
+               position: relative;
+               width: susy-span(2 of 6);
+                }
+                   .month{
+                      position: absolute;
+                      top: 16px;
+                      left: -6px;
+                      text-align: center;
+                      width: 40px;
+                      height: 40px;
+                      background-color:#248cec  ;
+                      font: 15px/40px  "Ubuntu Medium";
+                      color: #ffffff;
+                     }
+                  .day{
+                    position: absolute;
+                    top: 56px;
+                    left: -6px;
+                    text-align: center;
+                    width: 40px;
+                    height: 40px;
+                    background-color:#f4b60d  ;
+                    font: 15px/40px  "Ubuntu Medium";
+                    color: #2a2b2e;
+                    }
+
+      .latesNews__info{
+         margin-top: -7px;
+         width: susy-span(4 of 6);
+      }
+            h2{
+                a{
+                   font: 16px/20px  "Ubuntu Medium";
+                   color: #2a2d32;
+                 }
+                a:hover{
+                    color: #248cec;
+                 }
+               }
+           span{
+              font: 13px/20px  Arial;
+              color: #9e9e9e;
+               }
+            .latesNews__comment{
+               margin-left: 12px;
+            }
+             a{
+              text-decoration: none;
+              font: 13px/20px  Arial;
+                color: #0187f4;
+                 }
+          .latesNews__text{
+                    margin-top: 25px;
+                    width: 380px;
+                    font: 13px/20px  Arial;
+                     color: #8a8a8a;
+                 }
+}
+.latesNews__header {
+   margin-left: 320px;
+}
+#banners{
+   margin-left: 30px;
+   margin-top: 60px;
+   width: susy-span(4 of 12);
+   .banners__header{
+      margin-left: 1px;
+      margin-bottom: 27px;
+      font: 24px/20px  "Ubuntu Medium";
+      color: #2a2d32;
+   }
+   h3{
+   }
+     span{
+      display: inline-block;
+      height: 37px;
+      margin-bottom: 7px;
+      font: 13px/37px   "Ubuntu Medium";
+      color: #2a2d32;
+      border: 1px solid rgb(232, 232, 232);
+      background-color: #ffffff;
+      }
+      .banners__activ{
+         text-align: center;
+         width: 37px;
+         }
+      .banners__panel{
+         padding-left: 15px;
+         width: 532px;
+      }
+      p{
+         margin: 15px 40px 15px;
+         width: 515px;
+         font: 13px/20px  Arial;
+         color: #8a8a8a;
+      }
+}
+.activPanel{
+   background-color: #f4b60d!important;
+   color: #ffffff!important;
+}
+.logotypes{
+   height: 286px;
+   ul{
+      margin-left: 413px;
+      display:flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items:center;
+      height: 330px;
+      width: susy-span(7 of 12);
+      }
+}
